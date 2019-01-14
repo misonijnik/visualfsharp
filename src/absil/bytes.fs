@@ -62,7 +62,7 @@ type internal ByteStream =
 #endif
 
 
-type internal ByteBuffer = 
+type public ByteBuffer = 
     { mutable bbArray: byte[] 
       mutable bbCurrent: int }
 

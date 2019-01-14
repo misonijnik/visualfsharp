@@ -61,7 +61,7 @@
       <Link>ilpars.fsy</Link>
     </FsYacc>
     <FsYacc Include="$(FSharpSourcesRoot)\fsharp\pars.fsy">
-      <OtherFlags>--module Microsoft.FSharp.Compiler.Parser --open Microsoft.FSharp.Compiler --internal --lexlib Internal.Utilities.Text.Lexing --parslib Internal.Utilities.Text.Parsing</OtherFlags>
+      <OtherFlags>--module Microsoft.FSharp.Compiler.Parser --open Microsoft.FSharp.Compiler --lexlib Internal.Utilities.Text.Lexing --parslib Internal.Utilities.Text.Parsing</OtherFlags>
       <Link>pars.fsy</Link>
     </FsYacc>
     <Compile Include="$(FSharpSourcesRoot)/fsharp/Logger.fsi">

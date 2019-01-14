@@ -11,7 +11,7 @@ namespace Internal.Utilities.Text.Lexing
     open System.Collections.Generic
 
     [<Struct>]
-    type internal Position =
+    type public Position =
         val FileIndex: int
         val Line: int
         val OriginalLine: int
@@ -73,7 +73,7 @@ namespace Internal.Utilities.Text.Lexing
     type internal LexBufferFiller<'Char> = (LexBuffer<'Char> -> unit) 
         
     and [<Sealed>]
-        internal LexBuffer<'Char>(filler: LexBufferFiller<'Char>) = 
+        public LexBuffer<'Char>(filler: LexBufferFiller<'Char>) = 
         let context = new Dictionary<string,obj>(1) 
         let mutable buffer = [||]
         /// number of valid characters beyond bufferScanStart.

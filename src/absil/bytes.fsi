@@ -25,7 +25,7 @@ module internal Bytes =
 
 /// Imperative buffers and streams of byte[]
 [<Sealed>]
-type internal ByteBuffer = 
+type public ByteBuffer = 
     member Close : unit -> byte[] 
     member EmitIntAsByte : int -> unit
     member EmitIntsAsBytes : int[] -> unit
